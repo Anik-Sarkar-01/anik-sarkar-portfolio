@@ -10,7 +10,7 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <section className="bg-black text-white py-12 px-6">
+    <section className="bg-[#121214] text-white py-12 px-6">
       <div className="max-w-6xl mx-auto space-y-8">
         {/* Heading */}
         <div className="text-center">

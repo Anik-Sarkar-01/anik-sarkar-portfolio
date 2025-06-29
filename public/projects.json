@@ -1,0 +1,45 @@
+[
+    {
+        "title": "OneDrop - Blood Donation Platform",
+        "description": "A full-stack MERN app that connects donors and seekers with role-based dashboards, JWT auth, and donor filtering.",
+        "techStack": [
+            "React",
+            "TailwindCSS",
+            "Node.js",
+            "Express.js",
+            "MongoDB"
+        ],
+        "image": "/src/assets/projects/onedrop.png",
+        "githubClient": "https://github.com/Anik-Sarkar-01/one-drop",
+        "githubServer": "https://github.com/Anik-Sarkar-01/one-drop-server",
+        "live": "https://onedrop-85b65.web.app/"
+    },
+    {
+        "title": "StoryStack - Blogging Platform",
+        "description": "A dynamic blogging platform with rich text editing, full-text search, comment system, and category filtering. Firebase Auth & JWT for protected routes.",
+        "techStack": [
+            "React",
+            "Firebase",
+            "Node.js",
+            "MongoDB",
+            "Framer Motion"
+        ],
+        "image": "/src/assets/projects/storystack.png",
+        "githubClient": "https://github.com/Anik-Sarkar-01/StoryStack",
+        "githubServer": "https://github.com/Anik-Sarkar-01/StoryStack-Server",
+        "live": "https://story-stack-d45ff.web.app/"
+    },
+    {
+        "title": "IngiFund - Crowdfunding Platform",
+        "description": "A simplified crowdfunding web app where users can create, view, and fund campaigns. Uses Firebase for backend and real-time updates.",
+        "techStack": [
+            "React",
+            "Firebase",
+            "TailwindCSS"
+        ],
+        "image": "/src/assets/projects/ignifund.png",
+        "githubClient": "https://github.com/Anik-Sarkar-01/Ignifund",
+        "githubServer": "https://github.com/Anik-Sarkar-01/Ingifund-Server",
+        "live": "https://ignifund-client.web.app/"
+    }
+]

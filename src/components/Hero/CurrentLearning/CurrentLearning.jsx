@@ -11,7 +11,7 @@ import tailwindLogo from "../../../assets/icons/TailwindCSS-Dark.svg"
 
 const CurrentLearning = () => {
     return (
-        <div className='bg-black text-white h-full p-10 space-y-8'>
+        <div className='bg-[#121214] text-white h-full p-10 space-y-8'>
             <p className='text-xl font-semibold'>Technologies I Know Best!</p>
             <Marquee autoFill={true} speed={20} pauseOnHover={true}>
                 <div className='*:w-16 flex gap-5 ms-5'>
