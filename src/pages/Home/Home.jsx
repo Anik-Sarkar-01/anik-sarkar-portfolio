@@ -1,0 +1,32 @@
+import React from 'react';
+import Navbar from '../../components/Navbar/Navbar';
+import SideBar from '../../components/Hero/SideBar/SideBar';
+import Intro from '../../components/Hero/Intro/Intro';
+import CurrentLearning from '../../components/Hero/CurrentLearning/CurrentLearning';
+import AboutMe from '../../components/AboutMe/AboutMe';
+import MySkills from '../../components/MySkills/MySkills';
+
+const Home = () => {
+    return (
+        <div className='px-5 md:px-14 lg:px-28'>
+            <Navbar></Navbar>
+            <div className='space-y-10'>
+                <div className='flex gap-7'>
+                    <SideBar></SideBar>
+                    <div className='flex flex-col gap-7'>
+                        <Intro></Intro>
+                        <CurrentLearning></CurrentLearning>
+                    </div>
+                </div>
+                <div>
+                    <AboutMe></AboutMe>
+                </div>
+                <div>
+                    <MySkills></MySkills>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Home;
