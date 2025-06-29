@@ -1,12 +1,12 @@
 import React from 'react';
 import Marquee from "react-fast-marquee";
-import reactLogo from "../../../assets/icons/React-Dark.svg";
-import nodeLogo from "../../../assets/icons/NodeJS-Dark.svg";
-import expressLogo from "../../../assets/icons/ExpressJS-Dark.svg";
-import mongoLogo from "../../../assets/icons/MongoDB.svg";
-import typescriptLogo from "../../../assets/icons/TypeScript.svg"
-import javascriptLogo from "../../../assets/icons/JavaScript.svg"
-import tailwindLogo from "../../../assets/icons/TailwindCSS-Dark.svg"
+import reactLogo from "/icons/React-Dark.svg";
+import nodeLogo from "/icons/NodeJS-Dark.svg";
+import expressLogo from "/icons/ExpressJS-Dark.svg";
+import mongoLogo from "/icons/MongoDB.svg";
+import typescriptLogo from "/icons/TypeScript.svg"
+import javascriptLogo from "/icons/JavaScript.svg"
+import tailwindLogo from "/icons/TailwindCSS-Dark.svg"
 
 
 const CurrentLearning = () => {

@@ -9,7 +9,7 @@
             "Express.js",
             "MongoDB"
         ],
-        "image": "/src/assets/projects/onedrop.png",
+        "image": "/projects/onedrop.png",
         "githubClient": "https://github.com/Anik-Sarkar-01/one-drop",
         "githubServer": "https://github.com/Anik-Sarkar-01/one-drop-server",
         "live": "https://onedrop-85b65.web.app/"
@@ -24,7 +24,7 @@
             "MongoDB",
             "Framer Motion"
         ],
-        "image": "/src/assets/projects/storystack.png",
+        "image": "/projects/storystack.png",
         "githubClient": "https://github.com/Anik-Sarkar-01/StoryStack",
         "githubServer": "https://github.com/Anik-Sarkar-01/StoryStack-Server",
         "live": "https://story-stack-d45ff.web.app/"
@@ -37,7 +37,7 @@
             "Firebase",
             "TailwindCSS"
         ],
-        "image": "/src/assets/projects/ignifund.png",
+        "image": "/projects/ignifund.png",
         "githubClient": "https://github.com/Anik-Sarkar-01/Ignifund",
         "githubServer": "https://github.com/Anik-Sarkar-01/Ingifund-Server",
         "live": "https://ignifund-client.web.app/"
