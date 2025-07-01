@@ -7,7 +7,7 @@ const Intro = () => {
     return (
         <div className='p-10 bg-[#121214] text-white space-y-5'>
             <p>Hi there!</p>
-            <h1 className='text-4xl'>I'm Anik Sarkar, a web developer crafting user-centric web interfaces with pixel-perfect precision.</h1>
+            <h1 className='text-2xl md:text-3xl lg:text-4xl'>I'm Anik Sarkar, a web developer crafting user-centric web interfaces with pixel-perfect precision.</h1>
             <div className='flex items-center gap-3'>
                 <div aria-label="success" className="status status-success"></div>
                 <p>Available for Hiring</p>
