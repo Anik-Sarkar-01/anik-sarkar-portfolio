@@ -3,13 +3,11 @@ import profilePic from "../../../assets/profile.png";
 import { FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa6";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import { BoxesCore } from '../../ui/background-boxs';
 
 const SideBar = () => {
     return (
         <div className="flex justify-center p-4">
-            <div className='w-fit lg:w-[400px] h-auto bg-[#0D1321] text-white p-12 flex flex-col justify-center items-center space-y-6 rounded-xl shadow-xl relative overflow-hidden'>
-                <BoxesCore></BoxesCore>
+            <div className='w-fit lg:w-[400px] h-auto bg-[#0D1321] text-white p-12 flex flex-col justify-center items-center space-y-6 rounded-xl shadow-xl'>
                 {/* Profile Image with Animated Ring */}
                 <div className='w-60 h-60 relative flex items-center justify-center'>
                     <motion.svg
@@ -47,10 +45,8 @@ const SideBar = () => {
                 </div>
 
                 {/* Name and Bio */}
-
-                <div className='relative'> 
                     <h1 className='text-3xl font-bold text-center'>Anik Sarkar</h1>
-                    <p className='text-center text-gray-300'>A Web Enthusiast based in Bangladesh.</p>
+                    <p className='text-center text-gray-300'>A Frontend Developer based in Bangladesh.</p>
 
                     {/* Social Icons */}
                     <div className='flex items-center justify-center gap-6 text-2xl mt-2'>
@@ -81,7 +77,6 @@ const SideBar = () => {
                     </div>
                 </div>
             </div>
-        </div>
     );
 };
 
