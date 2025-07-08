@@ -40,7 +40,7 @@ const MySkills = () => {
 
 
     return (
-        <div className='bg-[#0D1321] text-white p-10'>
+        <div className='bg-[#0D1321] text-white p-5 md:p-8 lg:p-10 rounded-xl'>
             <div className="text-center">
                 <h1 className="text-3xl md:text-4xl font-bold text-white">
                     My Skills

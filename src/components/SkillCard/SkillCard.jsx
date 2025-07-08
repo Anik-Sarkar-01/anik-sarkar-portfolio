@@ -6,7 +6,7 @@ const SkillCard = ({ skill }) => {
 
     return (
         <div className="bg-[#1A1F2E] rounded-xl p-4 border border-gray-700 hover:border-[#00ff99] transition-all duration-300">
-            <div className="flex items-center gap-3 mb-3">
+            <div className="flex flex-col  items-center  gap-3 mb-3">
                 {icon && (
                     <img src={icon} alt={name} className="w-6 h-6 object-contain" />
                 )}

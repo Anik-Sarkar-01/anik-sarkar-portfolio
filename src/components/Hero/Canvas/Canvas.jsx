@@ -76,7 +76,7 @@ const Canvas = () => {
   return (
     <div className="bg-[#0D1321] text-white p-10 space-y-10 rounded-xl">
       <div className="space-y-4">
-        <h2 className="text-lg font-semibold">Try It Out</h2>
+        <h2 className="text-lg font-semibold">Draw Something!</h2>
 
         {/* Tool Buttons */}
         <div className="relative">

@@ -1,54 +1,55 @@
-import React, { useEffect, useState } from 'react';
+import React from "react";
+import "./AboutMe.css"
 
 const AboutMe = () => {
-  const [aboutMe, setAboutMe] = useState([]);
-
-  useEffect(() => {
-    fetch("/aboutme.json")
-      .then(res => res.json())
-      .then(data => setAboutMe(data));
-  }, []);
-
   return (
-    <section className="bg-[#0D1321] text-white py-12 px-6 rounded-xl">
-      <div className="max-w-6xl mx-auto space-y-8">
+    <section className="bg-[#0D1321] p-5 md:p-8 lg:p-10 text-white rounded-xl">
+      <div className="max-w-5xl mx-auto space-y-12">
         {/* Heading */}
         <div className="text-center">
-          <h1 className="text-3xl md:text-4xl font-bold text-white">
-            About Me
-          </h1>
-          <p className="mt-2 text-gray-400">
-            Turning ideas into interactive experiences using modern web technologies.
+          <h1 className="text-4xl font-bold tracking-tight">About Me</h1>
+          <p className="mt-3 text-gray-400 text-lg max-w-xl mx-auto">
+            Turning Ideas into Responsive, Real-World Web Applications.
           </p>
         </div>
 
         {/* Main Content */}
-        <div className="flex flex-col lg:flex-row gap-10">
-          {/* Left Side – Bio */}
-          <div className="flex-1 text-justify text-gray-200 leading-relaxed space-y-4">
-            <p>
-              I'm a frontend developer dedicated to building clean, responsive, and user-centric web applications.
-              With expertise in React.js, JavaScript, and TailwindCSS, I focus on delivering seamless user experiences and maintainable code.
-              My skills extend to backend technologies like Node.js, Express.js, and MongoDB, enabling me to contribute to full-stack solutions when needed.
+        <div className="space-y-5">
+          {/* Bio */}
+          <div className="space-y-4 text-gray-300 leading-loose">
+            <p className="">
+              I'm a passionate Frontend Developer from Bangladesh who loves building responsive and user-friendly web applications. I specialize in using <strong className="text-white">React.js, TailwindCSS, Node.js, and MongoDB, JavaScript</strong> to create smooth web experiences.
             </p>
-            <p>
-              Over time, I've independently built and deployed several real-world applications, including a role-based blood donation platform,
-              a feature-rich blogging system, and a dynamic crowdfunding platform. I developed these projects outside of my academic curriculum,
-              applying modern tools and best practices in authentication, state management, UI performance, and deployment.
+
+            <p className="">
+              I thrive on solving real-world problems with clean, thoughtful code. I'm currently seeking opportunities where I can contribute meaningfully, learn from talented teams, and grow as a developer.
             </p>
           </div>
 
-          {/* Right Side – Dynamic Feature Cards */}
-          <div className="flex-1 grid gap-5">
-            {aboutMe.map((item, idx) => (
-              <div
-                key={idx}
-                className="border border-gray-700 p-5 rounded-lg bg-[#1A1F2E] hover:border-[#00ff99] transition-all"
-              >
-                <h2 className="text-xl font-semibold text-[#00ff99] mb-2">{item.title}</h2>
-                <p className="text-gray-300 text-sm">{item.description}</p>
-              </div>
-            ))}
+          {/* Highlights */}
+          <div className="space-y-6">
+            <div className="bg-[#1A1F2E] custom-clippath p-5 rounded-lg border border-gray-700 hover:border-[#00ff99] transition">
+              <h2 className="text-xl font-semibold text-[#00ff99]">Tech Stack</h2>
+              <p className="text-gray-400 text-sm mt-2">
+                React.js, Node.js, Express.js, MongoDB, Firebase, JavaScript, TailwindCSS, Git
+              </p>
+            </div>
+            <div className="bg-[#1A1F2E] custom-clippath p-5 rounded-lg border border-gray-700 hover:border-[#00ff99] transition">
+              <h2 className="text-xl font-semibold text-[#00ff99]">Currently Exploring</h2>
+              <ul className="list-disc ml-5 text-gray-400 text-sm space-y-1 mt-2">
+                <li>TypeScript - for type-safe React development</li>
+                <li>Redux Toolkit - for efficient and scalable state management</li>
+                <li>Framer Motion - for smooth, interactive animations</li>
+              </ul>
+            </div>
+
+            <div className="bg-[#1A1F2E] custom-clippath p-5 rounded-lg border border-gray-700 hover:border-[#00ff99] transition">
+              <h2 className="text-xl font-semibold text-[#00ff99]">Education</h2>
+              <p className="text-sm text-gray-400 mt-2">
+                B.Tech in <strong>Computer Science & Engineering</strong> <br />National Institute of Technology Silchar, India<br />
+                <span className="italic">ICCR Scholar (2019–2023)</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@ const ProjectCard = ({ project }) => {
       <img
         src={image}
         alt={title}
-        className="w-full h-48 object-fill border-b border-gray-700"
+        className="w-full h-48 object-cover md:object-fill border-b border-gray-700"
       />
 
       <div className="p-5 flex flex-col gap-4">
