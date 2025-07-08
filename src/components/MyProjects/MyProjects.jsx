@@ -10,9 +10,9 @@ const MyProjects = () => {
     }, [])
 
     return (
-        <div className='bg-[#121214] text-white p-10'>
+        <div className='bg-[#0D1321] text-white p-10'>
             <div className="text-center">
-                <h1 className="text-3xl md:text-4xl font-bold text-[#00ff99]">
+                <h1 className="text-3xl md:text-4xl font-bold text-white">
                     My Projects
                 </h1>
                 <p className="mt-2 text-gray-400">

@@ -6,7 +6,7 @@ import { GoPencil } from "react-icons/go";
 import { BsEraser } from "react-icons/bs";
 
 
-const CurrentLearning = () => {
+const Canvas = () => {
   const canvasRef = useRef(null);
   const [eraseMode, setEraseMode] = useState(false);
   const [defaultSignature, setDefaultSignature] = useState([])
@@ -74,7 +74,7 @@ const CurrentLearning = () => {
   };
 
   return (
-    <div className="bg-[#121214] text-white p-10 space-y-10 rounded-xl">
+    <div className="bg-[#0D1321] text-white p-10 space-y-10 rounded-xl">
       <div className="space-y-4">
         <h2 className="text-lg font-semibold">Try It Out</h2>
 
@@ -164,4 +164,4 @@ const CurrentLearning = () => {
   );
 };
 
-export default CurrentLearning;
+export default Canvas;

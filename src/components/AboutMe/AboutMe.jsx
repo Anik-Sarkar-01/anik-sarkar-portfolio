@@ -10,11 +10,11 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <section className="bg-[#121214] text-white py-12 px-6">
+    <section className="bg-[#0D1321] text-white py-12 px-6 rounded-xl">
       <div className="max-w-6xl mx-auto space-y-8">
         {/* Heading */}
         <div className="text-center">
-          <h1 className="text-3xl md:text-4xl font-bold text-[#00ff99]">
+          <h1 className="text-3xl md:text-4xl font-bold text-white">
             About Me
           </h1>
           <p className="mt-2 text-gray-400">
@@ -43,7 +43,7 @@ const AboutMe = () => {
             {aboutMe.map((item, idx) => (
               <div
                 key={idx}
-                className="border border-gray-700 p-5 rounded-lg bg-[#1a1a1a] hover:border-[#00ff99] transition-all"
+                className="border border-gray-700 p-5 rounded-lg bg-[#1A1F2E] hover:border-[#00ff99] transition-all"
               >
                 <h2 className="text-xl font-semibold text-[#00ff99] mb-2">{item.title}</h2>
                 <p className="text-gray-300 text-sm">{item.description}</p>

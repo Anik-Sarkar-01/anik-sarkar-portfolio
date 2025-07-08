@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const SideBar = () => {
     return (
         <div className="flex justify-center p-4">
-            <div className='w-fit lg:w-[400px] h-auto bg-[#121214] text-white p-12 flex flex-col justify-center items-center space-y-6 rounded-xl shadow-xl relative'>
+            <div className='w-fit lg:w-[400px] h-auto bg-[#0D1321] text-white p-12 flex flex-col justify-center items-center space-y-6 rounded-xl shadow-xl relative'>
 
                 {/* Profile Image with Animated Ring */}
                 <div className='w-60 h-60 relative flex items-center justify-center'>

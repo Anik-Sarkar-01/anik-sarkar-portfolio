@@ -40,9 +40,9 @@ const MySkills = () => {
 
 
     return (
-        <div className='bg-[#121214] text-white p-10'>
+        <div className='bg-[#0D1321] text-white p-10'>
             <div className="text-center">
-                <h1 className="text-3xl md:text-4xl font-bold text-[#00ff99]">
+                <h1 className="text-3xl md:text-4xl font-bold text-white">
                     My Skills
                 </h1>
                 <p className="mt-2 text-gray-400">
@@ -56,7 +56,7 @@ const MySkills = () => {
                         onClick={() => handleClick(category)}
                         className={`px-4 py-2 rounded-lg border text-sm font-medium transition-all duration-200 ${activeCategory === category
                             ? "bg-[#00ff99] text-black"
-                            : "bg-[#121214] border-gray-600"
+                            : "bg-gray-700 border-gray-600"
                             }`}
                     >
                         {category}

@@ -16,7 +16,7 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div className='poppins-regular bg-black'>
+    <div className='poppins-regular bg-[#1A202C]'>
       <RouterProvider router={router} />
     </div>
   </StrictMode>,
