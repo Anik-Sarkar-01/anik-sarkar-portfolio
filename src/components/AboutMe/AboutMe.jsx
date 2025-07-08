@@ -14,8 +14,8 @@ const AboutMe = () => {
       <div className="max-w-6xl mx-auto space-y-8">
         {/* Heading */}
         <div className="text-center">
-          <h1 className="text-3xl md:text-4xl font-bold text-green-400 font-mono">
-            function AboutMe()
+          <h1 className="text-3xl md:text-4xl font-bold text-[#00ff99]">
+            About Me
           </h1>
           <p className="mt-2 text-gray-400">
             Turning ideas into interactive experiences using modern web technologies.
@@ -43,9 +43,9 @@ const AboutMe = () => {
             {aboutMe.map((item, idx) => (
               <div
                 key={idx}
-                className="border border-gray-700 p-5 rounded-lg bg-[#1a1a1a] hover:border-green-400 transition-all"
+                className="border border-gray-700 p-5 rounded-lg bg-[#1a1a1a] hover:border-[#00ff99] transition-all"
               >
-                <h2 className="text-xl font-semibold text-green-400 mb-2">{item.title}</h2>
+                <h2 className="text-xl font-semibold text-[#00ff99] mb-2">{item.title}</h2>
                 <p className="text-gray-300 text-sm">{item.description}</p>
               </div>
             ))}

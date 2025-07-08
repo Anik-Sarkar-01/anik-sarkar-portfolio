@@ -12,8 +12,8 @@ const MyProjects = () => {
     return (
         <div className='bg-[#121214] text-white p-10'>
             <div className="text-center">
-                <h1 className="text-3xl md:text-4xl font-bold text-green-400 font-mono">
-                    function myProjects()
+                <h1 className="text-3xl md:text-4xl font-bold text-[#00ff99]">
+                    My Projects
                 </h1>
                 <p className="mt-2 text-gray-400">
                     From concept to deployment — here's what I've created.

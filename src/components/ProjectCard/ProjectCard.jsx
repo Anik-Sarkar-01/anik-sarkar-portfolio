@@ -17,7 +17,7 @@ const ProjectCard = ({ project }) => {
       <img
         src={image}
         alt={title}
-        className="w-full h-48 object-cover border-b border-gray-700"
+        className="w-full h-48 object-fill border-b border-gray-700"
       />
 
       <div className="p-5 flex flex-col gap-4">
@@ -42,7 +42,7 @@ const ProjectCard = ({ project }) => {
               href={githubClient}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1 hover:text-green-400"
+              className="flex items-center gap-1 hover:text-[#00ff99]"
             >
               <FaGithub /> Client
             </a>
@@ -53,7 +53,7 @@ const ProjectCard = ({ project }) => {
               href={githubServer}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1 hover:text-green-400"
+              className="flex items-center gap-1 hover:text-[#00ff99]"
             >
               <FaServer /> Server
             </a>

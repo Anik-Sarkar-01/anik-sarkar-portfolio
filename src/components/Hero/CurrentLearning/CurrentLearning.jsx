@@ -1,31 +1,167 @@
-import React from 'react';
-import Marquee from "react-fast-marquee";
-import reactLogo from "/icons/React-Dark.svg";
-import nodeLogo from "/icons/NodeJS-Dark.svg";
-import expressLogo from "/icons/ExpressJS-Dark.svg";
-import mongoLogo from "/icons/MongoDB.svg";
-import typescriptLogo from "/icons/TypeScript.svg"
-import javascriptLogo from "/icons/JavaScript.svg"
-import tailwindLogo from "/icons/TailwindCSS-Dark.svg"
+import React, { useRef, useState, useEffect } from "react";
+import { ReactSketchCanvas } from "react-sketch-canvas";
+import { GoTrash, GoDownload } from "react-icons/go";
+import { BsFiletypeJson } from "react-icons/bs";
+import { GoPencil } from "react-icons/go";
+import { BsEraser } from "react-icons/bs";
 
 
 const CurrentLearning = () => {
-    return (
-        <div className='bg-[#121214] text-white h-full p-10 space-y-8'>
-            <p className='text-xl font-semibold'>Technologies I Know Best!</p>
-            <Marquee autoFill={true} speed={20} pauseOnHover={true}>
-                <div className='*:w-16 flex gap-5 ms-5'>
-                    <img src={reactLogo} alt="" />
-                    <img src={nodeLogo} alt="" />
-                    <img src={expressLogo} alt="" />
-                    <img src={mongoLogo} alt="" />
-                    <img src={typescriptLogo} alt="" />
-                    <img src={javascriptLogo} alt="" />
-                    <img src={tailwindLogo} alt="" />
-                </div>
-            </Marquee>
+  const canvasRef = useRef(null);
+  const [eraseMode, setEraseMode] = useState(false);
+  const [defaultSignature, setDefaultSignature] = useState([])
+  const [color, setColor] = useState("#00ff99")
+
+  useEffect(() => {
+    fetch("/signature.json")
+      .then(res => res.json())
+      .then(data => setDefaultSignature(data))
+  }, [])
+
+  useEffect(() => {
+    if (canvasRef.current) {
+      canvasRef.current.loadPaths(defaultSignature);
+    }
+  }, [defaultSignature]);
+
+  const handlePenClick = () => {
+    setEraseMode(false);
+    canvasRef.current?.eraseMode(false);
+  };
+
+  const handleEraserClick = () => {
+    setEraseMode(true);
+    canvasRef.current?.eraseMode(true);
+  };
+
+  const handleClearClick = () => canvasRef.current?.clearCanvas();
+
+  // unused button functionality
+  // const handleUndoClick = () => canvasRef.current?.undo();
+  // const handleRedoClick = () => canvasRef.current?.redo();
+  // const handleResetClick = () => canvasRef.current?.resetCanvas();
+
+
+  const handleSaveAsImage = async () => {
+    try {
+      const imageData = await canvasRef.current?.exportImage("png");
+      const link = document.createElement("a");
+      link.href = imageData;
+      link.download = "canvas-drawing.png";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (err) {
+      console.error("Image export failed", err);
+    }
+  };
+
+  const handleSaveAsJson = async () => {
+    try {
+      const jsonData = await canvasRef.current?.exportPaths();
+      const blob = new Blob([JSON.stringify(jsonData, null, 2)], {
+        type: "application/json",
+      });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "canvas-drawing.json";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (err) {
+      console.error("JSON export failed", err);
+    }
+  };
+
+  return (
+    <div className="bg-[#121214] text-white p-10 space-y-10 rounded-xl">
+      <div className="space-y-4">
+        <h2 className="text-lg font-semibold">Try It Out</h2>
+
+        {/* Tool Buttons */}
+        <div className="relative">
+          <div className="flex gap-2 text-black absolute items-center right-2 top-8 flex-col">
+            <button className="btn bg-transparent w-fit h-fit p-0 border-none shadow-none">
+              <input value={"#00ff99"} className="w-8 h-8" onChange={(e) => setColor(e.target.value)} type="color" name="" id="" />
+            </button>
+            <button
+              className={`border btn p-2 w-fit h-fit rounded ${!eraseMode ? "bg-green-400 text-white border-2 border-green-200" : "hover:bg-green-400"
+                }`}
+              onClick={handlePenClick}
+              disabled={!eraseMode}
+            >
+              <GoPencil></GoPencil>
+            </button>
+            <button
+              className={`border btn p-2 w-fit h-fit rounded ${eraseMode ? "bg-green-400 text-white border-2 border-green-200" : "hover:bg-green-400"
+                }`}
+              onClick={handleEraserClick}
+              disabled={eraseMode}
+            >
+              <BsEraser></BsEraser>
+            </button>
+
+            <button
+              className="border btn p-2 w-fit h-fit rounded hover:bg-green-400"
+              onClick={handleClearClick}
+            >
+              <GoTrash></GoTrash>
+            </button>
+
+            {/* Save Buttons */}
+            <button
+              className="border p-2 w-fit h-fit rounded btn hover:bg-green-400"
+              onClick={handleSaveAsImage}
+            >
+              <GoDownload></GoDownload>
+            </button>
+
+            <button
+              className="border p-2 w-fit h-fit rounded btn hover:bg-green-400"
+              onClick={handleSaveAsJson}
+            >
+              <BsFiletypeJson></BsFiletypeJson>
+            </button>
+
+
+
+
+            {/* unused buttons */}
+
+            {/* <button
+              className="px-4 py-1 border rounded hover:bg-white/10"
+              onClick={handleUndoClick}
+            >
+              Undo
+            </button> */}
+            {/* <button
+              className="px-4 py-1 border rounded hover:bg-white/10"
+              onClick={handleRedoClick}
+            >
+              Redo
+            </button> */}
+            {/* <button
+              className="px-4 py-1 border rounded hover:bg-white/10"
+              onClick={handleResetClick}
+            >
+              Reset
+            </button> */}
+          </div>
+
+          {/* Canvas */}
+          <ReactSketchCanvas
+            ref={canvasRef}
+            width="100%"
+            height="300px"
+            strokeWidth={3}
+            strokeColor={color}
+            canvasColor="transparent"
+            className="rounded-lg bg-[#353B48]"
+          />
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default CurrentLearning;

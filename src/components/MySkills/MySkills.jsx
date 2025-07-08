@@ -23,7 +23,7 @@ const MySkills = () => {
         "Frontend",
         "Backend & Database",
         "Tools & Platforms",
-        "Familiar"
+        "Familiar",
     ];
 
 
@@ -42,8 +42,8 @@ const MySkills = () => {
     return (
         <div className='bg-[#121214] text-white p-10'>
             <div className="text-center">
-                <h1 className="text-3xl md:text-4xl font-bold text-green-400 font-mono">
-                    function mySkills()
+                <h1 className="text-3xl md:text-4xl font-bold text-[#00ff99]">
+                    My Skills
                 </h1>
                 <p className="mt-2 text-gray-400">
                     Every tag, function, and API call — these are my tools.
@@ -55,7 +55,7 @@ const MySkills = () => {
                         key={idx}
                         onClick={() => handleClick(category)}
                         className={`px-4 py-2 rounded-lg border text-sm font-medium transition-all duration-200 ${activeCategory === category
-                            ? "bg-[#05DF72] text-black"
+                            ? "bg-[#00ff99] text-black"
                             : "bg-[#121214] border-gray-600"
                             }`}
                     >

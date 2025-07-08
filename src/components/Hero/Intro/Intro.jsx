@@ -5,14 +5,10 @@ import { FiDownload } from "react-icons/fi";
 
 const Intro = () => {
     return (
-        <div className='p-10 bg-[#121214] text-white space-y-5'>
+        <div className='p-8 bg-[#121214] text-white space-y-5 rounded-xl'>
             <p>Hi there!</p>
-            <h1 className='text-2xl md:text-3xl lg:text-4xl'>I'm Anik Sarkar, a web developer crafting user-centric web interfaces with pixel-perfect precision.</h1>
-            <div className='flex items-center gap-3'>
-                <div aria-label="success" className="status status-success"></div>
-                <p>Available for Hiring</p>
-            </div>
-            <button className='flex items-center gap-1 bg-[#EB5D3B] p-2'>Download Resume <FiDownload /> </button>
+            <h1 className='text-xl md:text-3xl lg:text-4xl'>I'm <span className='text-[#00ff99]'>Anik Sarkar</span>, a Web Developer crafting user-centric web interfaces.</h1>
+            <button className='flex items-center gap-1 bg-[#00ff99] p-2 text-black rounded-lg'>Download Resume <FiDownload /> </button>
         </div>
     );
 };
