@@ -6,14 +6,14 @@ import Canvas from '../../components/Hero/Canvas/Canvas';
 import AboutMe from '../../components/AboutMe/AboutMe';
 import MySkills from '../../components/MySkills/MySkills';
 import MyProjects from '../../components/MyProjects/MyProjects';
-
+import { Element } from 'react-scroll';
 
 const Home = () => {
     return (
         <div className='px-5 md:px-14 lg:px-28'>
             <Navbar></Navbar>
             <div className='space-y-10 mt-3'>
-               
+                <Element name='home'>
                     <div className='flex flex-col md:flex-row gap-7'>
                         <SideBar></SideBar>
                         <div className='flex flex-col gap-7'>
@@ -21,16 +21,22 @@ const Home = () => {
                             <Canvas></Canvas>
                         </div>
                     </div>
-
-                <div>
-                    <AboutMe></AboutMe>
-                </div>
-                <div>
-                    <MySkills></MySkills>
-                </div>
-                <div>
-                    <MyProjects></MyProjects>
-                </div>
+                </Element>
+                <Element name='aboutMe'>
+                    <div>
+                        <AboutMe></AboutMe>
+                    </div>
+                </Element>
+                <Element name="skills">
+                    <div>
+                        <MySkills></MySkills>
+                    </div>
+                </Element>
+                <Element name='projects'>
+                    <div>
+                        <MyProjects></MyProjects>
+                    </div>
+                </Element>
             </div>
         </div>
     );

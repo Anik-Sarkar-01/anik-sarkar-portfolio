@@ -3,11 +3,14 @@ import profilePic from "../../../assets/profile.png";
 import { FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa6";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import { FlipWords } from '../../ui/FlipWords';
 
 const SideBar = () => {
+    const words = ["Frontend Developer", "React Developer", "MERN Developer", "Web Enthusiast",];
+
     return (
         <div className="flex justify-center p-4">
-            <div className='w-fit lg:w-[400px] h-auto bg-[#0D1321] text-white p-12 flex flex-col justify-center items-center space-y-6 rounded-xl shadow-xl'>
+                <div className='w-fit lg:w-[400px] h-auto bg-[#0D1321] text-white p-12 flex flex-col justify-center items-center space-y-6 rounded-xl shadow-xl'>
                 {/* Profile Image with Animated Ring */}
                 <div className='w-60 h-60 relative flex items-center justify-center'>
                     <motion.svg
@@ -45,38 +48,39 @@ const SideBar = () => {
                 </div>
 
                 {/* Name and Bio */}
-                    <h1 className='text-3xl font-bold text-center'>Anik Sarkar</h1>
-                    <p className='text-center text-gray-300'>A Frontend Developer based in Bangladesh.</p>
+                <h1 className='text-3xl font-bold text-center'>Anik Sarkar</h1>
+                <p className='text-center text-gray-300'>A<strong><FlipWords words={words}></FlipWords></strong>based in Bangladesh.</p>
 
-                    {/* Social Icons */}
-                    <div className='flex items-center justify-center gap-6 text-2xl mt-2'>
-                        <a
-                            href="https://www.linkedin.com/in/your-profile"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="LinkedIn"
-                        >
-                            <FaLinkedin className="hover:text-[#00ff99] transition duration-200" />
-                        </a>
-                        <a
-                            href="https://www.facebook.com/your-profile"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Facebook"
-                        >
-                            <FaFacebook className="hover:text-[#00ff99] transition duration-200" />
-                        </a>
-                        <a
-                            href="https://github.com/your-profile"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="GitHub"
-                        >
-                            <FaGithub className="hover:text-[#00ff99] transition duration-200" />
-                        </a>
-                    </div>
+                {/* Social Icons */}
+                <div className='flex items-center justify-center gap-6 text-2xl mt-2'>
+                    <a
+                        href="https://www.linkedin.com/in/your-profile"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                    >
+                        <FaLinkedin className="hover:text-[#00ff99] transition duration-200" />
+                    </a>
+                    <a
+                        href="https://www.facebook.com/your-profile"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Facebook"
+                    >
+                        <FaFacebook className="hover:text-[#00ff99] transition duration-200" />
+                    </a>
+                    <a
+                        href="https://github.com/your-profile"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub"
+                    >
+                        <FaGithub className="hover:text-[#00ff99] transition duration-200" />
+                    </a>
                 </div>
             </div>
+            
+        </div>
     );
 };
 

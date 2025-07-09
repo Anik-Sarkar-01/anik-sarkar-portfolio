@@ -1,12 +1,38 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
     const navLinks = <>
-        <li><a>Home</a></li>
-        <li><a>About</a></li>
-        <li><a>Services</a></li>
-        <li><a>Works</a></li>
-        <li><a>Contact</a></li>
+        <li>
+            <Link to='home' spy={true}
+                smooth={true}
+                offset={50}
+                duration={500} >Home</Link>
+        </li>
+        <li>
+            <Link to='aboutMe' spy={true}
+                smooth={true}
+                offset={50}
+                duration={500} >About</Link>
+        </li>
+        <li>
+            <Link to='skills' spy={true}
+                smooth={true}
+                offset={50}
+                duration={500} >Skills</Link>
+        </li>
+        <li>
+            <Link to='projects' spy={true}
+                smooth={true}
+                offset={50}
+                duration={500} >Projects</Link>
+        </li>
+        <li>
+            <Link to="contacts" spy={true}
+                smooth={true}
+                offset={50}
+                duration={500} >Contact</Link>
+        </li>
     </>
     return (
         <div className="navbar bg-[#1A202C] text-white">

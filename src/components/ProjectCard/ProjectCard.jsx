@@ -13,7 +13,7 @@ const ProjectCard = ({ project }) => {
   } = project;
 
   return (
-    <div className="bg-[#1A1F2E] rounded-2xl overflow-hidden shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+    <div className="bg-[#1A1F2E] h-full rounded-2xl overflow-hidden shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
       <img
         src={image}
         alt={title}
