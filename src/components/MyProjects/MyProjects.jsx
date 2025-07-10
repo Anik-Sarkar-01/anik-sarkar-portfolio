@@ -27,7 +27,7 @@ const MyProjects = () => {
                     From concept to deployment — here's what I've created.
                 </p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10">
                 {projects.map((project, idx) => (
                     <ProjectCard key={idx} project={project} />
                 ))}

@@ -49,11 +49,11 @@ const Navbar = () => {
             </div>
 
             <div className="navbar-end">
-                <HoverBorderGradient containerClassName="rounded-xl"
-                    as="button"
-                >
-                    Contact Me
-                </HoverBorderGradient>
+                <Link to="contactMe" spy smooth offset={50} duration={500}>
+                    <HoverBorderGradient containerClassName="rounded-xl" as="button">
+                        Contact Me
+                    </HoverBorderGradient>
+                </Link>
             </div>
         </div>
     );

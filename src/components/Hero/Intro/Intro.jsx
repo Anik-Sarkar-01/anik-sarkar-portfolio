@@ -2,6 +2,7 @@ import React from 'react';
 import { FiDownload } from "react-icons/fi";
 import { FlipWords } from '../../ui/FlipWords/FlipWords';
 import { PointerHighlight } from '../../ui/PointerHighlight/PointerHighlight';
+import { HoverBorderGradient } from '../../ui/HoverBorderGradient/HoverBorderGradient';
 
 const Intro = () => {
     const words = ["Frontend Developer", "React Developer", "MERN Developer", "Web Enthusiast",];
@@ -15,7 +16,9 @@ const Intro = () => {
             >
                 <span className="relative z-10"><FlipWords words={words}></FlipWords></span>
             </PointerHighlight> crafting user-centric web interfaces.</h1>
-            <button className='flex items-center gap-1 bg-[#00ff99] p-2 text-black rounded-lg'>Download Resume <FiDownload /> </button>
+          <HoverBorderGradient containerClassName="rounded-xl" as='button' className="flex items-center gap-2">
+             Download Resume <FiDownload className='text-[#00ff99]' /> 
+          </HoverBorderGradient>
         </div>
     );
 };

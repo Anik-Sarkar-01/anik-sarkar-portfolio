@@ -4,6 +4,7 @@ import { FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa6";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { FlipWords } from '../../ui/FlipWords/FlipWords';
+import { HoverBorderGradient } from '../../ui/HoverBorderGradient/HoverBorderGradient';
 
 const SideBar = () => {
     const words = ["Frontend Developer", "React Developer", "MERN Developer", "Web Enthusiast",];
@@ -54,33 +55,39 @@ const SideBar = () => {
                 </div>
 
                 {/* Social Icons */}
-                <div className='flex items-center justify-center gap-6 text-2xl mt-2'>
+                <div className='flex items-center justify-center gap-3 mt-2'>
                     <a
-                        href="https://www.linkedin.com/in/your-profile"
+                        href="https://www.linkedin.com/in/anik-sarkar-cs"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="LinkedIn"
                     >
-                        <FaLinkedin className="hover:text-[#00ff99] transition duration-200" />
+                        <HoverBorderGradient containerClassName="rounded-xl" as="button" className="btn border-none">
+                            <FaLinkedin className="hover:text-[#00ff99] transition duration-200 text-xl" />
+                        </HoverBorderGradient>
                     </a>
                     <a
-                        href="https://www.facebook.com/your-profile"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Facebook"
-                    >
-                        <FaFacebook className="hover:text-[#00ff99] transition duration-200" />
-                    </a>
-                    <a
-                        href="https://github.com/your-profile"
+                        href="https://github.com/Anik-Sarkar-01"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="GitHub"
                     >
-                        <FaGithub className="hover:text-[#00ff99] transition duration-200" />
+                        <HoverBorderGradient containerClassName="rounded-xl" as="button" className="btn border-none">
+                            <FaGithub className="hover:text-[#00ff99] transition duration-200 text-xl" />
+                        </HoverBorderGradient>
+                        
                     </a>
-
-                    <p>Hello</p>
+                    <a
+                        href="https://www.facebook.com/beinganik.87"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Facebook"
+                    >
+                        <HoverBorderGradient containerClassName="rounded-xl" as="button" className="btn border-none">
+                            <FaFacebook className="hover:text-[#00ff99] transition duration-200 text-xl" />
+                        </HoverBorderGradient>
+                        
+                    </a>
                 </div>
             </div>
 

@@ -9,7 +9,6 @@ const MySkills = () => {
     const [activeCategory, setActiveCategory] = useState("All");
 
 
-
     useEffect(() => {
         fetch("/skills.json")
             .then(res => res.json())
@@ -41,7 +40,7 @@ const MySkills = () => {
 
 
     return (
-        <div className='bg-[#0D1321] text-white p-5 md:p-8 lg:p-10 rounded-xl'>
+        <div data-aos="fade-up" className='bg-[#0D1321] text-white p-5 md:p-8 lg:p-10 rounded-xl'>
             <div className="text-center">
                 <h1 className="text-3xl md:text-4xl font-bold">
                     <PointerHighlight
