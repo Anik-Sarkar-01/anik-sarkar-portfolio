@@ -79,6 +79,8 @@ const SideBar = () => {
                     >
                         <FaGithub className="hover:text-[#00ff99] transition duration-200" />
                     </a>
+
+                    <p>Hello</p>
                 </div>
             </div>
 
