@@ -11,8 +11,10 @@ import { Element } from 'react-scroll';
 const Home = () => {
     return (
         <div className='px-5 md:px-14 lg:px-28'>
-            <Navbar></Navbar>
-            <div className='space-y-10 mt-3'>
+            <div className='lg:fixed lg:top-0 lg:z-50 w-full lg:w-7xl'>
+                <Navbar></Navbar>
+            </div>
+            <div className='space-y-10 lg:pt-20'>
                 <Element name='home'>
                     <div className='flex flex-col md:flex-row gap-7'>
                         <SideBar></SideBar>

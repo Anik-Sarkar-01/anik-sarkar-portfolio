@@ -1,13 +1,12 @@
 import React from 'react';
 import { FiDownload } from "react-icons/fi";
-import { PointerHighlight } from '../../ui/PointerHighLight';
-import { FlipWords } from '../../ui/FlipWords';
-
+import { PointerHighlight } from '../../ui/PointerHighLight/PointerHighLight';
+import { FlipWords } from '../../ui/FlipWords/FlipWords';
 
 const Intro = () => {
     const words = ["Frontend Developer", "React Developer", "MERN Developer", "Web Enthusiast",];
     return (
-        <div className='p-8 bg-[#0D1321] space-y-5 text-white rounded-xl'>
+        <div className='p-8 bg-[#0d1321] space-y-5 text-white rounded-xl'>
             <p>Hi there!</p>
             <h1 className='text-xl md:text-3xl lg:text-4xl'>I'm <span className='text-[#00ff99]'>Anik Sarkar</span>, a <PointerHighlight
                 rectangleClassName="bg-green-100 dark:bg-green-900 border-green-300 dark:border-green-700 leading-loose"

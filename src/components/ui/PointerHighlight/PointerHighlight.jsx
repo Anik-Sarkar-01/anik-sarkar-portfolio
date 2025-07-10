@@ -1,5 +1,4 @@
-"use client";
-import { cn } from "../../lib/utils";
+import {cn} from "../../../lib/utils"
 // eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react";
 import { useRef, useEffect, useState } from "react";

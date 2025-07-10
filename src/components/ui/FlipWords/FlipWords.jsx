@@ -1,8 +1,7 @@
-"use client";
+import {cn} from "../../../lib/utils";
 import React, { useCallback, useEffect, useState } from "react";
 // eslint-disable-next-line no-unused-vars
 import { AnimatePresence, motion } from "motion/react";
-import { cn } from "../../lib/utils";
 
 export const FlipWords = ({
   words,

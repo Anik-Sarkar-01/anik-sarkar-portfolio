@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import SkillCard from '../SkillCard/SkillCard';
-import { PointerHighlight } from '../ui/PointerHighLight';
+import { PointerHighlight } from '../ui/PointerHighLight/PointerHighLight';
 
 const MySkills = () => {
 

@@ -1,65 +1,59 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-scroll';
+import { Divide as Hamburger } from 'hamburger-react';
+import { HoverBorderGradient } from '../ui/HoverBorderGradient/HoverBorderGradient';
 
 const Navbar = () => {
-    const navLinks = <>
-        <li>
-            <Link to='home' spy={true}
-                smooth={true}
-                offset={50}
-                duration={500} >Home</Link>
-        </li>
-        <li>
-            <Link to='aboutMe' spy={true}
-                smooth={true}
-                offset={50}
-                duration={500} >About</Link>
-        </li>
-        <li>
-            <Link to='skills' spy={true}
-                smooth={true}
-                offset={50}
-                duration={500} >Skills</Link>
-        </li>
-        <li>
-            <Link to='projects' spy={true}
-                smooth={true}
-                offset={50}
-                duration={500} >Projects</Link>
-        </li>
-        <li>
-            <Link to="contacts" spy={true}
-                smooth={true}
-                offset={50}
-                duration={500} >Contact</Link>
-        </li>
-    </>
-    return (
-        <div className="navbar bg-[#1A202C] text-white">
-            <div className="navbar-start">
-                <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
-                    </div>
-                    <ul
-                        tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-black rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        {navLinks}
-                    </ul>
-                </div>
-                <a className="btn btn-ghost font-extrabold text-3xl">
-                    <p>Anik</p>
-                    <div className='w-3 h-3 bg-[#00FF99] rounded-full'></div>
-                </a>
+    const [isOpen, setOpen] = useState(false);
 
+    const navLinks = (
+        <>
+            <li>
+                <Link className='text-lg lg:text-xl' to="home" spy smooth offset={50} duration={500} onClick={() => setOpen(false)}>Home</Link>
+            </li>
+            <li>
+                <Link className='text-lg lg:text-xl' to="aboutMe" spy smooth offset={50} duration={500} onClick={() => setOpen(false)}>About</Link>
+            </li>
+            <li>
+                <Link className='text-lg lg:text-xl' to="skills" spy smooth offset={50} duration={1000} onClick={() => setOpen(false)}>Skills</Link>
+            </li>
+            <li>
+                <Link className='text-lg lg:text-xl' to="projects" spy smooth offset={50} duration={500} onClick={() => setOpen(false)}>Projects</Link>
+            </li>
+        </>
+    );
+
+    return (
+        <div className="navbar bg-[#1A202C]/10 md:backdrop-blur-md text-white xl:ms-2">
+            <div className="navbar-start gap-2">
+                {/* Hamburger menu */}
+                <div className="lg:hidden">
+                    <Hamburger toggled={isOpen} toggle={setOpen} color="#00FF99" size={30} />
+                </div>
+                <Link to="home" className="font-bold text-2xl md:text-3xl flex items-center gap-2">
+                    <span>Anik</span>
+                    <span className="w-3 h-3 bg-[#00FF99] rounded-full"></span>
+                </Link>
             </div>
+
+            {/* Mobile dropdown menu */}
+            {isOpen && (
+                <div className="menu menu-sm bg-[#1A202C] absolute top-16 rounded-xl w-60 h-52 z-50 lg:hidden">
+                    <ul>{navLinks}</ul>
+                </div>
+            )}
+
+            {/* Desktop nav links */}
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 text-lg">
-                    {navLinks}
-                </ul>
+                <ul className="menu menu-horizontal px-1 text-lg">{navLinks}</ul>
             </div>
+
             <div className="navbar-end">
-                <a className="btn">Hire Me</a>
+                <HoverBorderGradient containerClassName="rounded-xl"
+                    as="button"
+                >
+                    Contact Me
+                </HoverBorderGradient>
             </div>
         </div>
     );
