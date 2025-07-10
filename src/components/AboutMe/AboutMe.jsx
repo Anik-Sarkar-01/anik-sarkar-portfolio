@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutMe.css"
-import { PointerHighlight } from "../ui/PointerHighLight/PointerHighLight";
+import { PointerHighlight } from "../ui/PointerHighlight/PointerHighlight";
 
 const AboutMe = () => {
   return (

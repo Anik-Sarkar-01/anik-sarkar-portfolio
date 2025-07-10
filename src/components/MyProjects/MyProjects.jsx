@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ProjectCard from '../ProjectCard/ProjectCard';
-import { PointerHighlight } from '../ui/PointerHighLight/PointerHighLight';
+import { PointerHighlight } from '../ui/PointerHighlight/PointerHighlight';
 
 
 const MyProjects = () => {

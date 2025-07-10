@@ -1,7 +1,7 @@
 import React from 'react';
 import { FiDownload } from "react-icons/fi";
-import { PointerHighlight } from '../../ui/PointerHighLight/PointerHighLight';
 import { FlipWords } from '../../ui/FlipWords/FlipWords';
+import { PointerHighlight } from '../../ui/PointerHighlight/PointerHighlight';
 
 const Intro = () => {
     const words = ["Frontend Developer", "React Developer", "MERN Developer", "Web Enthusiast",];
