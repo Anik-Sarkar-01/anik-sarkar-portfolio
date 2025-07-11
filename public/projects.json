@@ -41,5 +41,18 @@
         "githubClient": "https://github.com/Anik-Sarkar-01/Ignifund",
         "githubServer": "https://github.com/Anik-Sarkar-01/Ingifund-Server",
         "live": "https://ignifund-client.web.app/"
+    },
+    {
+        "title": "IngiFund - Crowdfunding Platform",
+        "description": "A simplified crowdfunding web app where users can create, view, and fund campaigns. Uses Firebase for backend and real-time updates.",
+        "techStack": [
+            "React",
+            "Firebase",
+            "TailwindCSS"
+        ],
+        "image": "/projectsImages/ignifund.png",
+        "githubClient": "https://github.com/Anik-Sarkar-01/Ignifund",
+        "githubServer": "https://github.com/Anik-Sarkar-01/Ingifund-Server",
+        "live": "https://ignifund-client.web.app/"
     }
 ]

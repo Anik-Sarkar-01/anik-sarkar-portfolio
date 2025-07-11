@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "title": "Education",
+        "items": [
+            "B.Tech in Computer Science & Engineering",
+            "National Institute of Technology Silchar, India",
+            "ICCR Scholar (2019 - 2023)",
+            "CGPA - 8.23 / 10.00"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Currently Exploring",
+        "items": [
+            "TypeScript - for type-safe React development",
+            "Redux Toolkit - for efficient and scalable state management",
+            "Framer Motion - for rich animations and interactions"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Interests",
+        "items": [
+            "Open Source Contributions",
+            "Building Scalable Web Applications",
+            "Creating Developer Tools",
+            "UI/UX Design and Accessibility"
+        ]
+    }
+]

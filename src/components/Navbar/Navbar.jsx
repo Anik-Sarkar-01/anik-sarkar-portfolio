@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { Divide as Hamburger } from 'hamburger-react';
-import { HoverBorderGradient } from '../ui/HoverBorderGradient/HoverBorderGradient';
+import GradientButton from '../shared/GradientButton/GradientButton';
 
 const Navbar = () => {
     const [isOpen, setOpen] = useState(false);
@@ -50,9 +50,7 @@ const Navbar = () => {
 
             <div className="navbar-end">
                 <Link to="contactMe" spy smooth offset={50} duration={500}>
-                    <HoverBorderGradient containerClassName="rounded-xl" as="button">
-                        Contact Me
-                    </HoverBorderGradient>
+                    <GradientButton buttonText={"Contact Me"}></GradientButton>
                 </Link>
             </div>
         </div>

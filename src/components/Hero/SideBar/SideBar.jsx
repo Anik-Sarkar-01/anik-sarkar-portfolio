@@ -3,11 +3,11 @@ import profilePic from "../../../assets/images/profile.png";
 import { FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa6";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import { FlipWords } from '../../ui/FlipWords/FlipWords';
 import { HoverBorderGradient } from '../../ui/HoverBorderGradient/HoverBorderGradient';
+import { TypeAnimation } from 'react-type-animation';
+import SocialLink from '../../shared/SocialLinks/SocialLink';
 
 const SideBar = () => {
-    const words = ["Frontend Developer", "React Developer", "MERN Developer"];
 
     return (
         <div className="flex justify-center">
@@ -51,43 +51,32 @@ const SideBar = () => {
                 {/* Name and Bio */}
                 <h1 className='text-3xl font-bold text-center'>Anik Sarkar</h1>
                 <div className='text-center text-gray-300'>
-                    A<strong><FlipWords words={words}></FlipWords></strong>based in Bangladesh.
+                    <TypeAnimation
+                        sequence={['Frontend Developer', 2000, 'React Developer', 2000, 'MERN Developer', 2000, 'Web Enthusiast', 2000,]}
+                        className='text-lg font-bold'
+                        repeat={Infinity}
+                        speed={30}
+                    />
                 </div>
 
                 {/* Social Icons */}
                 <div className='flex items-center justify-center gap-3 mt-2'>
-                    <a
-                        href="https://www.linkedin.com/in/anik-sarkar-cs"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="LinkedIn"
+                    <SocialLink
+                        link={"https://www.linkedin.com/in/anik-sarkar-cs"}
+                        icon={<FaLinkedin />}
                     >
-                        <HoverBorderGradient containerClassName="rounded-xl" as="button" className="btn border-none">
-                            <FaLinkedin className="hover:text-[#00ff99] transition duration-200 text-xl" />
-                        </HoverBorderGradient>
-                    </a>
-                    <a
-                        href="https://github.com/Anik-Sarkar-01"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="GitHub"
+                    </SocialLink>
+                    <SocialLink
+                        link={"https://github.com/Anik-Sarkar-01"}
+                        icon={<FaGithub />}
                     >
-                        <HoverBorderGradient containerClassName="rounded-xl" as="button" className="btn border-none">
-                            <FaGithub className="hover:text-[#00ff99] transition duration-200 text-xl" />
-                        </HoverBorderGradient>
-                        
-                    </a>
-                    <a
-                        href="https://www.facebook.com/beinganik.87"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Facebook"
+                    </SocialLink>
+
+                    <SocialLink
+                        link={"https://www.facebook.com/beinganik.87"}
+                        icon={<FaFacebook />}
                     >
-                        <HoverBorderGradient containerClassName="rounded-xl" as="button" className="btn border-none">
-                            <FaFacebook className="hover:text-[#00ff99] transition duration-200 text-xl" />
-                        </HoverBorderGradient>
-                        
-                    </a>
+                    </SocialLink>
                 </div>
             </div>
 

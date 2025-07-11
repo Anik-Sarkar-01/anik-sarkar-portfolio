@@ -9,6 +9,7 @@ import MyProjects from '../../components/MyProjects/MyProjects';
 import { Element } from 'react-scroll';
 import ContactMe from '../../components/ContactMe/ContactMe';
 import Footer from '../../components/Footer/Footer';
+import PaginationSlider from '../../components/PaginationSlider/PaginationSlider';
 
 const Home = () => {
     return (
