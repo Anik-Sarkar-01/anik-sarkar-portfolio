@@ -41,14 +41,14 @@ const AboutMe = () => {
           {/* Highlights */}
 
           <div className="space-y-6">
-            <div data-aos="fade-right" className="bg-[#1A1F2E] custom-clippath p-5 rounded-lg border border-gray-700 hover:border-[#00ff99] transition">
+            <div data-aos="fade-up" className="bg-[#1A1F2E] custom-clippath p-5 rounded-lg border border-gray-700 hover:border-[#00ff99] transition">
               <h2 className="text-xl font-semibold text-[#00ff99]">Tech Stack</h2>
               <p className="text-gray-400 text-sm mt-2">
                 React.js, Node.js, Express.js, MongoDB, Firebase, JavaScript, TailwindCSS, Git
               </p>
             </div>
 
-            <div data-aos="fade-left" className="bg-[#1A1F2E] custom-clippath p-5 rounded-lg border border-gray-700 hover:border-[#00ff99] transition">
+            <div data-aos="fade-up" className="bg-[#1A1F2E] custom-clippath p-5 rounded-lg border border-gray-700 hover:border-[#00ff99] transition">
               <h2 className="text-xl font-semibold text-[#00ff99]">Currently Exploring</h2>
               <ul className="list-disc ml-5 text-gray-400 text-sm space-y-1 mt-2">
                 <li>TypeScript - for type-safe React development</li>
@@ -57,7 +57,7 @@ const AboutMe = () => {
               </ul>
             </div>
 
-            <div data-aos="fade-right" className="bg-[#1A1F2E] custom-clippath p-5 rounded-lg border border-gray-700 hover:border-[#00ff99] transition">
+            <div data-aos="fade-up" className="bg-[#1A1F2E] custom-clippath p-5 rounded-lg border border-gray-700 hover:border-[#00ff99] transition">
               <h2 className="text-xl font-semibold text-[#00ff99]">Education</h2>
               <p className="text-sm text-gray-400 mt-2">
                 B.Tech in <strong>Computer Science & Engineering</strong> <br />National Institute of Technology Silchar, India<br />

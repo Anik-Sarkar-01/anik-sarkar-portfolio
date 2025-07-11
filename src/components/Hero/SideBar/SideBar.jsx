@@ -7,7 +7,7 @@ import { FlipWords } from '../../ui/FlipWords/FlipWords';
 import { HoverBorderGradient } from '../../ui/HoverBorderGradient/HoverBorderGradient';
 
 const SideBar = () => {
-    const words = ["Frontend Developer", "React Developer", "MERN Developer", "Web Enthusiast",];
+    const words = ["Frontend Developer", "React Developer", "MERN Developer"];
 
     return (
         <div className="flex justify-center">
