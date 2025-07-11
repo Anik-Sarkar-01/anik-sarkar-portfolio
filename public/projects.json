@@ -43,16 +43,19 @@
         "live": "https://ignifund-client.web.app/"
     },
     {
-        "title": "IngiFund - Crowdfunding Platform",
-        "description": "A simplified crowdfunding web app where users can create, view, and fund campaigns. Uses Firebase for backend and real-time updates.",
+        "title": "GadgetHeaven - E-commerce Website",
+        "description": "A modern React-based e-commerce platform for browsing and purchasing electronic gadgets.",
         "techStack": [
             "React",
-            "Firebase",
-            "TailwindCSS"
+            "React Router",
+            "TailwindCSS",
+            "DaisyUI",
+            "Recharts",
+            "Local Storage"
         ],
-        "image": "/projectsImages/ignifund.png",
-        "githubClient": "https://github.com/Anik-Sarkar-01/Ignifund",
-        "githubServer": "https://github.com/Anik-Sarkar-01/Ingifund-Server",
-        "live": "https://ignifund-client.web.app/"
+        "image": "/projectsImages/gadgetHeaven.png",
+        "githubClient": "https://github.com/Anik-Sarkar-01/react-gadget-heaven",
+        "githubServer": "",
+        "live": "https://gadget-heaven12.netlify.app/"
     }
 ]
