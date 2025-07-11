@@ -19,7 +19,7 @@ const ProjectCard = ({ project }) => {
       <img
         src={image}
         alt={title}
-        className="w-full h-48 object-cover border-b border-gray-700"
+        className="w-full h-48 border-b border-gray-700"
       />
       <div className="p-5 flex flex-col gap-4">
         <h2 className="text-xl font-semibold text-white">{title}</h2>

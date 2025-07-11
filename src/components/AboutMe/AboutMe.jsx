@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./AboutMe.css"
-import { PointerHighlight } from "../ui/PointerHighlight/PointerHighlight";
 import Heading from "../Heading/Heading";
 import InfoCard from "../InfoCard/InfoCard";
 
@@ -31,11 +29,11 @@ const AboutMe = () => {
         <div className="space-y-5">
           {/* Bio */}
           <div className="space-y-4 text-gray-300 leading-loose">
-            <p className="">
-              I'm a Computer Science Graduate & <strong>Frontend Developer</strong> from Bangladesh who loves building responsive and user-friendly web applications. I specialize in using <strong className="text-white">React.js, TailwindCSS, Node.js, and MongoDB, JavaScript</strong> to create smooth web experiences.
+            <p>
+              I'm a Computer Science Graduate & <strong>Frontend Developer</strong> from Bangladesh. I love building user-friendly web applications. I specialize in using <strong className="text-white">React.js, TailwindCSS, Node.js, and MongoDB, JavaScript</strong> to create smooth web experiences.
             </p>
 
-            <p className="">
+            <p>
               I thrive on solving real-world problems with clean, thoughtful code. I'm currently seeking opportunities where I can contribute meaningfully, learn from talented teams, and grow as a developer.
             </p>
           </div>

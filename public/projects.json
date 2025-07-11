@@ -4,10 +4,12 @@
         "description": "A full-stack MERN app that connects donors and seekers with role-based dashboards, JWT auth, and donor filtering.",
         "techStack": [
             "React",
-            "TailwindCSS",
             "Node.js",
             "Express.js",
-            "MongoDB"
+            "MongoDB",
+            "Firebase",
+            "TailwindCSS",
+            "TanStack Query"
         ],
         "image": "/projectsImages/onedrop.png",
         "githubClient": "https://github.com/Anik-Sarkar-01/one-drop",
@@ -19,9 +21,11 @@
         "description": "A dynamic blogging platform with rich text editing, full-text search, comment system, and category filtering. Firebase Auth & JWT for protected routes.",
         "techStack": [
             "React",
-            "Firebase",
             "Node.js",
+            "Express.js",
             "MongoDB",
+            "Firebase",
+            "TailwindCSS",
             "Framer Motion"
         ],
         "image": "/projectsImages/storystack.png",
@@ -34,8 +38,12 @@
         "description": "A simplified crowdfunding web app where users can create, view, and fund campaigns. Uses Firebase for backend and real-time updates.",
         "techStack": [
             "React",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
             "Firebase",
-            "TailwindCSS"
+            "TailwindCSS",
+            "Swiper"
         ],
         "image": "/projectsImages/ignifund.png",
         "githubClient": "https://github.com/Anik-Sarkar-01/Ignifund",
