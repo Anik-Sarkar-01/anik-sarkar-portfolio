@@ -19,7 +19,7 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div className='poppins-regular bg-[#1A202C]'>
+    <div className='sora-font bg-[#1A202C]'>
       <RouterProvider router={router} />
       <Toaster
         position="top-center"

@@ -23,7 +23,7 @@ const ProjectCard = ({ project }) => {
       />
       <div className="p-5 flex flex-col gap-4">
         <h2 className="text-xl font-semibold text-white">{title}</h2>
-        <p className="text-sm text-gray-400">{description}</p>
+        <p className="text-sm text-gray-400 leading-relaxed">{description}</p>
         <div className="flex flex-wrap gap-2 text-xs">
           {techStack.map((tech, idx) => (
             <span key={idx} className="bg-gray-800 text-gray-300 px-2 py-1 rounded-full">
