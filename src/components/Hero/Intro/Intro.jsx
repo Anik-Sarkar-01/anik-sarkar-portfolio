@@ -1,10 +1,8 @@
 import React from 'react';
 import { PointerHighlight } from '../../ui/PointerHighlight/PointerHighlight';
-import { FlipWords } from '../../ui/FlipWords/FlipWords';
 import GradientButton from '../../shared/GradientButton/GradientButton';
 
 const Intro = () => {
-    const words = ["Frontend Developer", "React Developer", "MERN Developer"];
     return (
         <div className='p-8 bg-[#0d1321] space-y-5 text-white rounded-xl'>
             <p>Hi there!</p>
@@ -13,7 +11,7 @@ const Intro = () => {
                 pointerClassName="text-green-500 h-3 w-3"
                 containerClassName="inline-block ml-1"
             >
-                <span className='relative z-10 '><FlipWords words={words}></FlipWords></span>
+                <span className='relative z-10 p-2'>Web Enthusiast</span>
             </PointerHighlight> crafting user-centric web interfaces.</h1>
             <GradientButton>
                 <a
