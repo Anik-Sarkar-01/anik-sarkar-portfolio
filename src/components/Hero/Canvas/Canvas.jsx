@@ -74,7 +74,7 @@ const Canvas = () => {
   };
 
   return (
-    <div className="bg-[#0D1321] text-white p-10 space-y-10 rounded-xl">
+    <div className="bg-[#0D1321] text-white p-10 space-y-10 rounded-xl hidden md:block">
       <div className="space-y-4">
         <h2 className="text-lg font-semibold">Draw Something!</h2>
 
