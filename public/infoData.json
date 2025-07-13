@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Education",
         "items": [
-            "B.Tech in Computer Science & Engineering",
+            "B.Tech in Computer Science & Engineering (2019 - 2023)",
             "National Institute of Technology Silchar, India",
             "ICCR Scholar (2019 - 2023)",
             "CGPA - 8.23 / 10.00"
@@ -22,10 +22,10 @@
         "id": 3,
         "title": "Interests",
         "items": [
-            "Open Source Contributions",
-            "Building Scalable Web Applications",
-            "Creating Developer Tools",
-            "UI/UX Design and Accessibility"
+            "Exploring modern web development technologies",
+            "Building innovative web applications",
+            "Traveling to new places",
+            "Photography and visual storytelling"
         ]
     }
 ]

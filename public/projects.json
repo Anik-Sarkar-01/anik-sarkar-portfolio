@@ -1,7 +1,7 @@
 [
     {
         "title": "OneDrop - Blood Donation Platform",
-        "description": "A full-stack MERN app that connects donors and seekers with role-based dashboards, JWT auth, and donor filtering.",
+        "description": "A role-based blood donation platform connecting donors, volunteers, and admins. It enables efficient management of donation requests, user profiles, and blogs through a responsive dashboard.",
         "techStack": [
             "React",
             "Node.js",
@@ -18,7 +18,7 @@
     },
     {
         "title": "StoryStack - Blogging Platform",
-        "description": "A dynamic blogging platform with rich text editing, full-text search, comment system, and category filtering. Firebase Auth & JWT for protected routes.",
+        "description": "A dynamic blogging platform with features like text editing, search, comment system, and category filtering. It offers user authentication, blog management, and a responsive user interface.",
         "techStack": [
             "React",
             "Node.js",
@@ -35,7 +35,7 @@
     },
     {
         "title": "IngiFund - Crowdfunding Platform",
-        "description": "A simplified crowdfunding web app where users can create, view, and fund campaigns. Uses Firebase for backend and real-time updates.",
+        "description": "A simplified crowdfunding web app where users can create, view, and fund campaigns. It provides user authentication, campaign management, and a responsive UI with theme toggling.",
         "techStack": [
             "React",
             "Node.js",
@@ -52,7 +52,7 @@
     },
     {
         "title": "GadgetHeaven - E-commerce Website",
-        "description": "A modern React-based e-commerce platform for browsing and purchasing electronic gadgets.",
+        "description": "A e-commerce web app for discovering and purchasing gadgets. Users can manage their cart, wishlist, and explore products by category with a smooth UI.",
         "techStack": [
             "React",
             "React Router",

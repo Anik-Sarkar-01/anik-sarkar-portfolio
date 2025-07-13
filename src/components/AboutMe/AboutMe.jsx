@@ -23,7 +23,7 @@ const AboutMe = () => {
           {/* Heading */}
           <Heading
             heading={"About Me"}
-            subheading={"Turning Ideas into Responsive, Real-World Web Applications."}
+            subheading={"Turning ideas into real-world web applications."}
           >
           </Heading>
 
