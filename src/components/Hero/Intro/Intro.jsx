@@ -4,7 +4,7 @@ import { FlipWords } from '../../ui/FlipWords/FlipWords';
 import GradientButton from '../../shared/GradientButton/GradientButton';
 
 const Intro = () => {
-    const words = ["Frontend Developer", "React Developer", "MERN Developer", "Web Enthusiast"];
+    const words = ["Frontend Developer", "React Developer", "MERN Developer"];
     return (
         <div className='p-8 bg-[#0d1321] space-y-5 text-white rounded-xl'>
             <p>Hi there!</p>

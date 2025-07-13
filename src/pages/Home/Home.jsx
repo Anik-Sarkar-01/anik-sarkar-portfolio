@@ -9,17 +9,19 @@ import MyProjects from '../../components/MyProjects/MyProjects';
 import { Element } from 'react-scroll';
 import ContactMe from '../../components/ContactMe/ContactMe';
 import Footer from '../../components/Footer/Footer';
-import PaginationSlider from '../../components/PaginationSlider/PaginationSlider';
+
 
 const Home = () => {
     return (
         <>
-            <div className='px-5 md:px-14 lg:px-28'>
-                <div className='lg:fixed lg:top-0 lg:z-50 w-full lg:w-7xl'>
-                    <Navbar></Navbar>
-                </div>
-                <div className=' space-y-14 lg:space-y-28 lg:pt-20'>
+            <div className='flex'>
+                <Navbar></Navbar>
+                <div className='space-y-14 lg:space-y-28 pt-3 px-5 xl:ps-16 w-full xl:w-7xl mx-auto'>
                     <Element name='home'>
+                        <div className="font-bold text-2xl md:text-3xl flex items-center gap-2 text-white mb-2 ms-2">
+                            <span>Anik</span>
+                            <span className="w-3 h-3 bg-[#00FF99] rounded-full"></span>
+                        </div>
                         <div className='flex flex-col md:flex-row gap-7'>
                             <SideBar></SideBar>
                             <div className='flex flex-col gap-7'>
@@ -28,7 +30,7 @@ const Home = () => {
                             </div>
                         </div>
                     </Element>
-                    <Element name='aboutMe'>
+                    <Element name='about'>
                         <div>
                             <AboutMe></AboutMe>
                         </div>

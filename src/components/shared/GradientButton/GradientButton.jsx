@@ -1,11 +1,11 @@
 import React from 'react';
 import { HoverBorderGradient } from '../../ui/HoverBorderGradient/HoverBorderGradient';
 
-const GradientButton = ({buttonText, children}) => {
+const GradientButton = ({buttonText, icon, children}) => {
     return (
         <div>
             <HoverBorderGradient containerClassName="rounded-xl" as="button" className="btn border-none">
-                {children || buttonText}
+                {children || buttonText || icon}
             </HoverBorderGradient>
         </div>
     );

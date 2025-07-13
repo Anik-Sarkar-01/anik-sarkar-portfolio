@@ -3,7 +3,6 @@ import profilePic from "../../../assets/images/profile.png";
 import { FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa6";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import { HoverBorderGradient } from '../../ui/HoverBorderGradient/HoverBorderGradient';
 import { TypeAnimation } from 'react-type-animation';
 import SocialLink from '../../shared/SocialLinks/SocialLink';
 
@@ -11,7 +10,7 @@ const SideBar = () => {
 
     return (
         <div className="flex justify-center">
-            <div className='w-fit bg-[#0D1321] text-white p-12 flex flex-col justify-center items-center space-y-6 rounded-xl shadow-xl'>
+            <div className='w-full bg-[#0D1321] text-white p-12 flex flex-col justify-center items-center space-y-6 rounded-xl shadow-xl'>
                 {/* Profile Image with Animated Ring */}
                 <div className='w-60 h-60 relative flex items-center justify-center'>
                     <motion.svg
@@ -52,7 +51,7 @@ const SideBar = () => {
                 <h1 className='text-3xl font-bold text-center'>Anik Sarkar</h1>
                 <div className='text-center text-gray-300'>
                     <TypeAnimation
-                        sequence={['Frontend Developer', 2000, 'React Developer', 2000, 'MERN Developer', 2000, 'Web Enthusiast', 2000,]}
+                        sequence={['Frontend Developer', 2000, 'React Developer', 2000, 'MERN Developer', 2000, 2000,]}
                         className='text-lg font-bold'
                         repeat={Infinity}
                         speed={30}
