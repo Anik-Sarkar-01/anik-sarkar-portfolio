@@ -16,7 +16,7 @@ const Home = () => {
         <>
             <div className='flex'>
                 <Navbar></Navbar>
-                <div className='space-y-14 lg:space-y-28 pt-3 px-5 xl:ps-16 w-full xl:w-7xl mx-auto'>
+                <div className='space-y-14 lg:space-y-28 pt-3 px-5 2xl:ps-16 w-full 2xl:w-7xl mx-auto'>
                     <Element name='home'>
                         <div className="font-bold text-2xl md:text-3xl flex items-center gap-2 text-white mb-2 ms-2">
                             <span>Anik</span>
