@@ -15,6 +15,8 @@ const ContactMe = () => {
     const templateID = import.meta.env.VITE_TEMPLATE_ID;
     const publicKey = import.meta.env.VITE_PUBLIC_KEY;
 
+    console.log(serviceID, templateID, publicKey);
+
     const formRef = useRef();
     const [sending, setSending] = useState(false);
     const [sent, setSent] = useState(false);
@@ -25,10 +27,10 @@ const ContactMe = () => {
 
         emailjs
             .sendForm(
-                `${serviceID}`,
-                `${templateID}`,
+                serviceID,
+                templateID,
                 formRef.current,
-                `${publicKey}`
+                publicKey
             )
             .then(
                 () => {
