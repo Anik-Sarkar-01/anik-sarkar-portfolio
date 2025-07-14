@@ -104,8 +104,8 @@ const Navbar = () => {
     return (
 
         <>
-            <div className=" bg-[#1A202C]/10 rounded-tl-2xl rounded-tr-2xl fixed -bottom-2 z-50 2xl:top-32 2xl:left-5 w-full 2xl:w-fit backdrop-blur-md text-white 2xl:ms-2">
-                <ul className="menu menu-horizontal 2xl:menu-vertical px-1 text-lg items-center w-full 2xl:w-fit justify-around 2xl:gap-8">{navLinks}</ul>
+            <div className=" bg-[#1A202C]/10 rounded-tl-2xl rounded-tr-2xl fixed -bottom-2 z-50 xl:top-32 xl:left-5 w-full xl:w-fit backdrop-blur-md text-white xl:ms-2">
+                <ul className="menu menu-horizontal xl:menu-vertical px-1 text-lg items-center w-full xl:w-fit justify-around xl:gap-8">{navLinks}</ul>
             </div>
         </>
     );
