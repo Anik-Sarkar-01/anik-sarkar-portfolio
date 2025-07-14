@@ -100,7 +100,6 @@ const Navbar = () => {
 
 
     return (
-
         <>
             <div className="bg-[#1A202C]/10 rounded-tl-2xl rounded-tr-2xl fixed -bottom-2 z-50 xl:top-32 w-full xl:w-fit backdrop-blur-md text-white ">
                 <ul className="menu menu-horizontal xl:menu-vertical px-1 text-lg items-center w-full xl:w-fit justify-around xl:gap-8">{navLinks}</ul>
