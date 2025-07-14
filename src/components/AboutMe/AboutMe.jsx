@@ -13,7 +13,6 @@ const AboutMe = () => {
       .then((json) => setData(json));
   }, []);
 
-  console.log(data);
 
 
   return (

@@ -4,6 +4,7 @@ import { GoTrash, GoDownload } from "react-icons/go";
 import { BsFiletypeJson } from "react-icons/bs";
 import { GoPencil } from "react-icons/go";
 import { BsEraser } from "react-icons/bs";
+import toast from "react-hot-toast";
 
 
 const Canvas = () => {
@@ -52,7 +53,7 @@ const Canvas = () => {
       link.click();
       document.body.removeChild(link);
     } catch (err) {
-      console.error("Image export failed", err);
+      toast.error("Something went wrong", err);
     }
   };
 
@@ -69,7 +70,7 @@ const Canvas = () => {
       link.click();
       document.body.removeChild(link);
     } catch (err) {
-      console.error("JSON export failed", err);
+      toast.error("Something went wrong", err);
     }
   };
 
