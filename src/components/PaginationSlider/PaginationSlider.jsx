@@ -33,7 +33,7 @@ const PaginationSlider = () => {
         320: { slidesPerView: 1 },
         768: { slidesPerView: 2 },
         1280: {slidesPerView: 3},
-        1537: {slidesPerView: 4}
+        1713: {slidesPerView: 4}
       }}
     >
       {projects.map((project, idx) => (
