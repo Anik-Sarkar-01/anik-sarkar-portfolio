@@ -65,7 +65,7 @@ const MySkills = () => {
                 ))}
             </div>
 
-            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 pt-10'>
+            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-5 pt-10'>
                 {
                     mySkills && mySkills.map((skill, idx) => <SkillCard key={idx} skill={skill}></SkillCard>)
                 }

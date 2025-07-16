@@ -9,10 +9,10 @@ import SocialLink from '../../shared/SocialLinks/SocialLink';
 const SideBar = () => {
 
     return (
-        <div className="flex justify-center">
+        <div className="flex h-full justify-center">
             <div className='w-full bg-[#0D1321] text-white p-12 flex flex-col justify-center items-center space-y-6 rounded-xl shadow-xl'>
                 {/* Profile Image with Animated Ring */}
-                <div className='w-60 h-60 relative flex items-center justify-center'>
+                <div className='w-60 h-60  relative flex items-center justify-center'>
                     <motion.svg
                         className="absolute w-full h-full z-0"
                         fill="transparent"

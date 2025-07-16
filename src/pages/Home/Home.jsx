@@ -16,15 +16,17 @@ const Home = () => {
         <>
             <div className='flex'>
                 <Navbar></Navbar>
-                <div className='space-y-14 lg:space-y-28 pt-3 px-5 xl:ps-16 w-full 2xl:w-7xl mx-auto'>
+                <div className='space-y-14 lg:space-y-28 pt-3 px-5 xl:ps-16 w-full 2xl:w-[calc(100%-80px)] mx-auto'>
                     <Element name='home'>
                         <div className="font-bold text-2xl md:text-3xl flex items-center gap-2 text-white mb-2 ms-2">
                             <span>Anik</span>
                             <span className="w-3 h-3 bg-[#00FF99] rounded-full"></span>
                         </div>
                         <div className='flex flex-col md:flex-row gap-7'>
-                            <SideBar></SideBar>
-                            <div className='flex flex-col gap-7'>
+                            <div className='2xl:flex-1/4'>
+                                <SideBar></SideBar>
+                            </div>
+                            <div className='flex 2xl:flex-2/3 flex-col gap-7'>
                                 <Intro></Intro>
                                 <Canvas></Canvas>
                             </div>
