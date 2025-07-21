@@ -51,7 +51,7 @@ const SideBar = () => {
                 <h1 className='text-3xl font-bold text-center'>Anik Sarkar</h1>
                 <div className='text-center text-gray-300'>
                     <TypeAnimation
-                        sequence={['Frontend Developer', 2000, 'React Developer', 2000, 'MERN Developer', 2000, 'Web Enthusiast', 2000,]}
+                        sequence={[ 'Web Enthusiast', 2000, 'MERN Developer', 2000, 'Frontend Developer', 2000, 'React Developer', 2000, 'Backend Developer', 2000 ]}
                         className='text-lg font-bold'
                         repeat={Infinity}
                         speed={30}

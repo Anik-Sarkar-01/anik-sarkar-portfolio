@@ -15,7 +15,7 @@ const Intro = () => {
             </PointerHighlight> crafting user-centric web interfaces.</h1>
             <GradientButton>
                 <a
-                    href="https://drive.google.com/file/d/1zkMI1duf_QDvZKNzBiNtwmdjOKtVTI0X/view"
+                    href="https://drive.google.com/file/d/17BomlV3jIbmxSsco2i9tTJloNPwvC3Jf/view"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
