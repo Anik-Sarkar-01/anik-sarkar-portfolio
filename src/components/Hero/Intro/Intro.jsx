@@ -1,8 +1,12 @@
 import React from 'react';
 import { PointerHighlight } from '../../ui/PointerHighlight/PointerHighlight';
 import GradientButton from '../../shared/GradientButton/GradientButton';
+import { FaDownload } from "react-icons/fa6";
+
+
 
 const Intro = () => {
+    const resumeLink = "https://drive.google.com/file/d/17BomlV3jIbmxSsco2i9tTJloNPwvC3Jf/view";
     return (
         <div className='p-8 bg-[#0d1321] space-y-5 text-white rounded-xl'>
             <p>Hi there!</p>
@@ -13,16 +17,8 @@ const Intro = () => {
             >
                 <span className='relative z-10 p-2'>Web Enthusiast</span>
             </PointerHighlight> crafting user-centric web interfaces.</h1>
-            <GradientButton>
-                <a
-                    href="https://drive.google.com/file/d/17BomlV3jIbmxSsco2i9tTJloNPwvC3Jf/view"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Download Resume
-                </a>
+            <GradientButton href={resumeLink} icon={<FaDownload/>} buttonText="Download Resume">
             </GradientButton>
-
         </div>
     );
 };

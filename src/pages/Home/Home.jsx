@@ -13,7 +13,11 @@ import Footer from '../../components/Footer/Footer';
 
 const Home = () => {
     return (
-        <>
+        <div style={{
+            backgroundColor: "#1A202C",
+            backgroundImage: "radial-gradient(#2B2F3A 1px, #1A202C 1px)",
+            backgroundSize: "20px 20px",
+        }}>
             <div className='flex'>
                 <Navbar></Navbar>
                 <div className='space-y-14 lg:space-y-28 pt-3 px-5 xl:ps-16 w-full 2xl:w-[calc(100%-80px)] mx-auto'>
@@ -55,7 +59,7 @@ const Home = () => {
                 </div>
             </div>
             <Footer></Footer>
-        </>
+        </div>
     );
 };
 

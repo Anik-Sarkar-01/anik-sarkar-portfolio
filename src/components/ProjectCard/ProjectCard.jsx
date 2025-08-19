@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt, FaServer } from 'react-icons/fa';
 import GradientButton from '../shared/GradientButton/GradientButton';
-import ProjectLink from '../shared/ProjectLink/ProjectLink';
 
 const ProjectCard = ({ project }) => {
   const {
@@ -39,19 +38,16 @@ const ProjectCard = ({ project }) => {
         </div>
 
         <div className="flex flex-wrap gap-4 pt-4 text-white text-sm">
+          {live && (
+            <GradientButton href={live} icon={<FaExternalLinkAlt />} buttonText="Live">
+            </GradientButton>
+          )}
           {githubClient && (
-            <GradientButton>
-              <ProjectLink href={githubClient} icon={<FaGithub />} text={"Client"} />
+            <GradientButton href={githubClient} icon={<FaGithub />} buttonText="Client">
             </GradientButton>
           )}
           {githubServer && (
-            <GradientButton>
-              <ProjectLink href={githubServer} icon={<FaServer />} text={"Server"} />
-            </GradientButton>
-          )}
-          {live && (
-            <GradientButton>
-              <ProjectLink href={live} icon={<FaExternalLinkAlt />} text={"Live"} />
+            <GradientButton href={githubServer} icon={<FaServer />} buttonText="Server">
             </GradientButton>
           )}
         </div>
